@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector</title>
+    <style>
+        /*
+        p{
+            background-color: red;
+            font-size: 30px;
+            text-align: center;
+        }
+        */
+        /*
+        div p{
+            background-color: peru;
+            color: white;
+            font-size: 25px;
+            text-align: center;
+        }
+        */
+        /*
+        div >p{
+            background-color: lightcoral;
+            color: black;
+            font-size: 28px;
+            text-align: center;
+        }
+        */
+        div + p{
+            background-color: chartreuse;
+            color: brown;
+            font-size: 34px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="selector">
+        <p>This is parageaph Heading</p>
+    </div>
+    <div>
+        <p>This is another paragraph</p>
+    </div>
+    <div>
+        <ul>
+            <li> <p>This is list paragraph</p> </li>
+        </ul>
+    </div>
+    <p>This is outer paragraph</p>
+</body>
+</html>

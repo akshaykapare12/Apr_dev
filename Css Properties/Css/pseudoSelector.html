@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selector before and after</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+            background-image: url(pizza.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 8;
+
+        }
+
+        header::before {
+            content: ;
+
+
+
+        }
+
+        .navigation {
+            display: flex;
+            font-size: 20px;
+        }
+
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        section {
+            display: flex;
+            height: 300px;
+            margin: 3px 23px;
+            /* border: 2px solid red; */
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        section::after {
+            content: This is a after content;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Sevices</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Wellcome codding World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet iusto saepe consequatur
+            architecto, quas tempore atque ipsam assumenda provident quis reiciendis nobis laboriosam facere.
+            Reprehenderit explicabo molestiae ab voluptates alias quia animi nisi?</p>
+    </section>
+</body>
+
+</html>
