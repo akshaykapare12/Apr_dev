@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blink{
+            animation:
+            blinker 1.5s linear infinite;
+            color: red;
+            font-family: sans-serif;
+        }
+        @keyframes blinker
+        {
+            50%{
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- behavior valu sliding,scrolling,alternate -->
+
+<marquee behavior="scroll" direction="up" scrollamount="1" >slow scrolling</marquee>
+<br>
+<marquee behavior="scroll" direction="right" scrollamount="12">Little Fast</marquee>
+<br>
+<marquee behavior="scroll" direction="left" scrollamount="20">Fast Scrolling</marquee>
+<br>
+<marquee behavior="scroll" direction="right" scrollamount="50">Very Fast Scrolling</marquee>
+
+
+<!-- blinking Text Within Marquee -->
+
+<marquee class="blink">This is an example of blinking text using Css within a marquee</marquee>
+
+<marquee 
+direction="down"
+width="250"
+hight="200"
+behavior="alternate"
+style="border: solid">
+<marquee behavior="alternate">
+    This text will bounce</marquee>
+</marquee>
+</body>
+</html>

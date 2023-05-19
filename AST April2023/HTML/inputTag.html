@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input tags useses </title>
+</head>
+<body>
+    <!-- text input tag start -->
+    <p>text input</p>
+    <input type="text" required placeholder="enter your name" >
+    <br><br>
+    <input type="text" readonly placeholder="readonly">this text is readonly
+    <br><br>
+    <input type="text" minlength="5" maxlength="10" size="70px"placeholder="my name" id="my name" name="my name" value="Akshay">
+    <br><br>
+    <input type="text" disabled>this text is disabled
+    <!--text input tag end-->
+    <br>
+    <!-- number input tag start -->
+    <p>number input</p>
+    <input type="Number">
+    <!-- number input tag end -->
+    <br>
+    <!-- password input tag start -->
+    <p>password input</p>
+    <input type="password" required>
+    <br><br>
+    <!--pattern attribute start Example-Akshay%123-->
+    <input type="password" pattern="[A-Z]{1}[A-za-z0-9@#$%]{7}"> password pattern
+    <br><br>
+    <input type="password" pattern="[0-9]{8,}" title="eight or more characters">
+    <br><br>
+    <!--india phone number country code pattern-->
+    <input type="text" pattern="[+]{1}[9]{1}[1]{1}[6-9]{1}[0-9]{9}" value="+91">phone number pattern
+    <!--pattern attribute end-->
+    <input type="submit">
+    <!--pattern attribute end-->
+    <!-- password input tag end -->
+    <br>
+    <!-- date input tag start -->
+    <p>date input</p>
+    <input type="date">
+    <!-- date input tag end -->
+    <br>
+    <!-- file input tag start -->
+    <p>file input</p>
+    <input type="file">
+    <!-- file input tag end -->
+    <br>
+    <!-- checkbox input tag start -->
+    <p>checkbox input</p>
+    <input type="checkbox">
+    <!-- checkbox input tag end -->
+    <br>
+    <!-- button input tag start -->
+    <p>button input</p>
+    <input type="button" value="button">
+    <!-- button input tag end -->
+    <br>
+    <!-- color input tag start -->
+    <p>color input</p>
+    <input type="color">
+    <!-- color input tag end -->
+    <br>
+    <!--submit input tag start-->
+    <label for="submit">submit</label><br>
+    <input type="submit" value="submit form"><br>
+    <!--submit tag end-->
+    <br>
+    <!--email input tag start-->
+    <label for="email">email</label><br>
+    <input type="email"><br>
+    <!--email input tag end-->
+    <br>
+    <!--hidden input tag start-->
+    <label for="hidden">hidden</label><br>
+    <input type="hidden" value="pune"><br>
+    <br>
+    <!--reset input tag start-->
+    <label for="reset">reset</label><br>
+    <input type="reset"><br>
+    <!--reset input tag end-->
+    <br>
+    <!--time input tag start-->
+    <label for="time">time</label><br>
+    <input type="time"><br>
+    <!--time input tag end-->
+    <br>
+    <!--url input tag start-->
+    <label for="url">url</label><br>
+    <input type="url"><br>
+    <!--url inut tag end-->
+    <br>
+    <!--range input tag start-->
+    <label for="range">range</label><br>
+    <input type="range" min="1000" max="2000"><br>
+    <!--range input tag end-->
+    <br>
+    <!--radio input button start-->
+    <label for="gender">Male</label>
+    <input type="radio" value="male" name="gender" id="man"><br>
+    <br>
+    <label for="gender">female</label>
+    <input type="radio" value="female" name="gender"id="women">
+    <!--radio input button end-->
+    <div>
+        <input type="text" value="Akshay" size="100px">
+        <input type="submit" value="Go">
+    </div>
+    <br><br>
+    <!--select tag start-->
+    <div>
+        <caption>City</caption>
+        <select>
+            <option hidden></option>
+            <option>pune </option>
+            <option selected>mumbai</option>
+            <option>Nashik</option>
+            <option>Kolhapur</option>
+            <option>Ch.Sambhaji Maharaj Nagar</option>
+        </select>
+    </div>
+    <!--select tag end-->
+    <br>
+    <!--input checkbox start in use checked tag-->
+    <input type="checkbox" checked>mango
+    <input type="checkbox" checked>apple
+    <input type="checkbox" checked>orange
+    <input type="checkbox" checked>gave
+    <input type="checkbox" checked>gcheckbox
+    <!--input checkbox end-->
+    <br><br>
+    <!--input radio start in use checked tag-->
+    <input type="radio" checked>Male
+    <input type="radio">Female
+    <input type="radio">Other
+    <!--input radio tag end-->
+   <br><br>
+   <h1>the autocomplete attribute</h1>
+   <p>fill in and submit the form,then reload the page to see how atocomplete works</p>
+   <p>notice the autocomplete is "on"for the form,but "off" for the e-mail field</p>
+
+   <form action="/action_page.php" autocomplete="on">
+    <label for="fname">First name:
+    </label>
+    <input type="text" name="fname" id="fname" required><br><br>
+    <label for="lname">Last name
+    </label>
+    <input type="text" name="lname" id="lname"><br><br>
+    <label for="email">Email
+    </label>
+    <input type="email" name="email" id="email" autocomplete="off"><br><br>
+    <input type="submit">
+   </form>
+
+    
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow-property</title>
+</head>
+<style>
+    .first-para {
+        border: 2px solid red;
+        background-color: violet;
+        /* 
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+         */
+        padding: 10px 10px 10px 10px;
+        margin: 15px 15px 15px 15px;
+        text-align: center;
+        font-size: 30px;
+
+    }
+
+    .container {
+        /* 
+        overflow properties usees
+         */
+        border: 2px solid gray;
+        height: 232px;
+        width: 412px;
+        background: antiquewhite;
+        color: blue;
+        overflow: auto;
+        /* overflow-x: scroll; */
+        /* overflow-y: scroll; */
+        /* overflow-y: hidden; */
+
+    }
+    .text-Overflow{
+        border: 2px solid red;
+        width: 200px;
+        background-color: #baabf0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* text-overflow: clip; */
+
+    }
+</style>
+
+<body>
+    <div class="first-para">
+        <div>
+            <div>
+                <div>
+                    this is first paragraph
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, quasi ea eligendi veritatis
+        ratione et doloribus, molestiae excepturi rerum necessitatibus inventore veniam neque minus debitis magni
+        adipisci! At autem explicabo inventore dolorem expedita quisquam, velit, ut necessitatibus porro pariatur nisi
+        ex quod repellat mollitia esse a ipsam voluptas amet, dicta veritatis iste. Neque beatae numquam dolorem magni
+        fugit enim itaque ducimus tenetur quam eligendi voluptates cupiditate suscipit optio placeat odio laborum, porro
+        necessitatibus quia, at dicta ex maxime pariatur ipsam nobis! Harum tempore aliquam architecto. Et, id. Eius,
+        ipsa nisi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae eaque dolorem nemo quidem
+        voluptatem! Dicta,nihil nemo necessitatibus debitis consectetur vero itaque eligendi numquam explicabo unde teneturliberodeserunt, aperiam eos rem, facilis sed.
+    </div>
+    <br><br>
+    <div class="text-Overflow">
+        Lorem ipsum dolor sit amet consectetur adipisicing elithhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh. Accusantium ipsum nobis repellat. Suscipit quam, vel provident, magnam quasi modi quidem odit ipsa illo debitis dolore voluptatum. Adipisci ullam voluptatem quidem. Fuga sequi dolorem expedita placeat praesentium ea, a eius! 
+    </div>
+</body>
+
+</html>
